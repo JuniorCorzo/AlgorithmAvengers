@@ -29,44 +29,41 @@ public class DBServiceImpl implements DBService {
 
 
     //Obtener toda la informacion de la bases de datos dependiendo de la entidad
-    @Override
+
     public List<Usuarios> encontrarTodoUsuario() {
         return usuarioRepository.findAll();
     }
 
-    @Override
+
     public List<Sector> encontrarTodoSector() {
         return sectorRepository.findAll();
     }
 
-    @Override
+
     public List<Recursos> encontrarTodoRecursos() {
         return recursosRepository.findAll();
     }
 
-    @Override
     public List<MotivosDesercion> encontrarTodoMotivos() {
         return motivosRepository.findAll();
     }
 
 
     //Obtener solo la infomacion por id dependiendo de la entidad
-    @Override
     public Optional<Usuarios> encotrarPorIdUsuario(int id) {
         return usuarioRepository.findById(id);
     }
 
-    @Override
+
     public Optional<Sector> encontrarPorIdSector(int id) {
         return sectorRepository.findById(id);
     }
 
-    @Override
+
     public Optional<Recursos> encontrarPorIdRecursos(int id) {
         return recursosRepository.findById(id);
     }
 
-    @Override
     public Optional<MotivosDesercion> encontrarPorIdMotivos(int id) {
         return motivosRepository.findById(id);
     }
