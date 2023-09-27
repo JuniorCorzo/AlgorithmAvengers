@@ -71,42 +71,42 @@ public class ServiceDBCrud implements DBService {
     }
 
     //Guardar la infomacion dentro de la base de datos
-    public void guardar(Usuarios usuario){
-        usuarioRepository.save(usuario);
+    public Usuarios guardar(Usuarios usuario){
+        return usuarioRepository.save(usuario);
     }
 
-    public void guardar(Sectores sector){
-        sectorRepository.save(sector);
+    public Sectores guardar(Sectores sector){
+        return sectorRepository.save(sector);
     }
 
-    public void guardar(Recursos recurso){
-        recursosRepository.save(recurso);
+    public Recursos guardar(Recursos recurso){
+        return  recursosRepository.save(recurso);
     }
 
-    public void guardar(MotivosDesercion motivo){
-        motivosRepository.save(motivo);
+    public MotivosDesercion guardar(MotivosDesercion motivo){
+        return motivosRepository.save(motivo);
     }
 
     //Actualizar la informacion dentro de la base de datos
     //uso chat gpt
-    public void actualizar(int id, Usuarios usuario){
+    public Usuarios actualizar(int id, Usuarios usuario){
         usuarioRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el usuario"));
-        usuarioRepository.save(usuario);
+        return usuarioRepository.save(usuario);
     }
 
-    public void actualizar(int id, Sectores sector){
+    public Sectores actualizar(int id, Sectores sector){
         sectorRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el sector"));
-        sectorRepository.save(sector);
+        return sectorRepository.save(sector);
     }
 
-    public void actualizar(int id, Recursos recursos){
+    public Recursos actualizar(int id, Recursos recursos){
         recursosRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el recurso"));
-        recursosRepository.save(recursos);
+        return recursosRepository.save(recursos);
     }
 
-    public void actualizar(int id, MotivosDesercion motivos){
+    public MotivosDesercion actualizar(int id, MotivosDesercion motivos){
         motivosRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el motivo de la dercesion"));
-        motivosRepository.save(motivos);
+        return motivosRepository.save(motivos);
     }
 
     //Borrar informacion de la base de datos

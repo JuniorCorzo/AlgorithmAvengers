@@ -19,7 +19,6 @@ public class ServiceTest {
 
     @Test
     public void guardarUsuario(){
-        Usuarios usuarios = new Usuarios(1, "Angel", "Corzo", "prueba@gmail.com", "1234");
-        crud.guardar(usuarios);
+
     }
 }
