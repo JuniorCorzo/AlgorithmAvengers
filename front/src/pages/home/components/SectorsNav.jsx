@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-no-comment-textnodes */
-import '../styled-components/sectors.scss';
+import '../styled-components/sectorsNav.scss';
 
 // eslint-disable-next-line react/prop-types
 export default function Sectors({name, sections}) {

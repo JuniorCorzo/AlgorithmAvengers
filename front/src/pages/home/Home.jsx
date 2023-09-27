@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar";
 import './styled-components/home.scss'
 import homeImg from '../../assets/img/home.jpeg'
-import Sectors from "./components/Sectors";
+import Sectors from "./components/SectorsNav";
 
 export default function Home() {
     const data = [
@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
             </section>
 
-            
+
         </>
     );
 }
