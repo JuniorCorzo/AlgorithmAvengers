@@ -15,17 +15,20 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Service("encontrarDatos")
 public class DBServiceEncontrarImpl implements DBService {
 
-    @Autowired
-    UsuarioRepository usuarioRepository;
-    @Autowired
-    SectorRepository sectorRepository;
-    @Autowired
-    RecursosRepository recursosRepository;
-    @Autowired
-    MotivosRepository motivosRepository;
+    final UsuarioRepository usuarioRepository;
+    final SectorRepository sectorRepository;
+    final RecursosRepository recursosRepository;
+    final MotivosRepository motivosRepository;
+
+    public DBServiceEncontrarImpl(SectorRepository sectorRepository, UsuarioRepository usuarioRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
+        this.sectorRepository = sectorRepository;
+        this.usuarioRepository = usuarioRepository;
+        this.recursosRepository = recursosRepository;
+        this.motivosRepository = motivosRepository;
+    }
 
 
     //Obtener toda la informacion de la bases de datos dependiendo de la entidad
