@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 
 @Service("manejoDatos")
 public class DBServiceManejoDatosImpl implements DBService {
@@ -29,6 +30,8 @@ public class DBServiceManejoDatosImpl implements DBService {
         this.motivosRepository = motivosRepository;
     }
 
+
+    //Guardar la infomacion dentro de la base de datos
     public void guardarUsuario(Usuarios usuario){
         usuarioRepository.save(usuario);
     }
@@ -44,4 +47,26 @@ public class DBServiceManejoDatosImpl implements DBService {
     public void guardarMotivo(MotivosDesercion motivo){
         motivosRepository.save(motivo);
     }
+
+    //Actualizar la informacion dentro de la base de datos
+    public void actualizarUsuario(int id, Usuarios usuario){
+        usuarioRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el usuario"));
+        usuarioRepository.save(usuario);
+    }
+
+    public void actualizarSector(int id, Sector sector){
+        sectorRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el sector"));
+        sectorRepository.save(sector);
+    }
+
+    public void actualizarRecurso(int id, Recursos recursos){
+        recursosRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el recurso"));
+        recursosRepository.save(recursos);
+    }
+
+    public void actualizarRecurso(int id, MotivosDesercion motivos){
+        motivosRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el motivo de la dercesion"));
+        motivosRepository.save(motivos);
+    }
+
 }
