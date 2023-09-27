@@ -11,23 +11,64 @@ import com.algoritms.avengers.senasoft.repository.UsuarioRepository;
 import com.algoritms.avengers.senasoft.services.DBService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @Service
-public class DBServiceManejoDatosImpl implements DBService {
+public class ServiceDBCrud implements DBService {
     final UsuarioRepository usuarioRepository;
     final SectoresRepository sectorRepository;
     final RecursosRepository recursosRepository;
     final MotivosRepository motivosRepository;
 
 
-    public DBServiceManejoDatosImpl(UsuarioRepository usuarioRepository, SectoresRepository sectorRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
+    public ServiceDBCrud(UsuarioRepository usuarioRepository, SectoresRepository sectorRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
         this.usuarioRepository = usuarioRepository;
         this.sectorRepository = sectorRepository;
         this.recursosRepository = recursosRepository;
         this.motivosRepository = motivosRepository;
     }
 
+    //Obtener toda la informacion de la bases de datos dependiendo de la entidad
+
+    public List<Usuarios> encontrarTodoUsuario() {
+        return usuarioRepository.findAll();
+    }
+
+
+    public List<Sectores> encontrarTodoSector() {
+        return sectorRepository.findAll();
+    }
+
+
+    public List<Recursos> encontrarTodoRecursos() {
+        return recursosRepository.findAll();
+    }
+
+    public List<MotivosDesercion> encontrarTodoMotivos() {
+        return motivosRepository.findAll();
+    }
+
+
+    //Obtener solo la infomacion por id dependiendo de la entidad
+    public Optional<Usuarios> encotrarPorIdUsuario(int id) {
+        return usuarioRepository.findById(id);
+    }
+
+
+    public Optional<Sectores> encontrarPorIdSector(int id) {
+        return sectorRepository.findById(id);
+    }
+
+
+    public Optional<Recursos> encontrarPorIdRecursos(int id) {
+        return recursosRepository.findById(id);
+    }
+
+    public Optional<MotivosDesercion> encontrarPorIdMotivos(int id) {
+        return motivosRepository.findById(id);
+    }
 
     //Guardar la infomacion dentro de la base de datos
     public void guardar(Usuarios usuario){
