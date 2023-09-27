@@ -1,5 +1,5 @@
 # AlgorithmAvengers
-## Proyecto de solución a la problemtaica de deserción en las carreras STEM
+## Proyecto de solución a la problemática de deserción en las carreras STEM
 
 ## Objetivo del Proyecto
 
