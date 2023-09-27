@@ -18,8 +18,8 @@ export default function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <Link to='/categories' className="nav-item">
-                            <a className="nav-link">Categorias</a>
+                        <Link to='/filter' className="nav-item">
+                            <a className="nav-link">Motivos de Desercion</a>
                         </Link>
                         <Link to='/resources' className="nav-item">
                             <a className="nav-link">Recursos</a>

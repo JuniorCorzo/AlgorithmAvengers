@@ -7,6 +7,7 @@ import Error from './routes/Error';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Resources from './pages/resources/Resources';
+import Filter from './pages/filter/Filter';
 
 const router = createBrowserRouter([
   {
@@ -16,17 +17,22 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <Login/>,
+    element: <Login />,
     error: <Error />,
   },
   {
     path: "/register",
-    element: <Register/>,
+    element: <Register />,
     error: <Error />,
   },
   {
     path: "/resources",
-    element: <Resources/>,
+    element: <Resources />,
+    error: <Error />,
+  },
+  {
+    path: "/filter",
+    element: <Filter />,
     error: <Error />,
   },
 ]);

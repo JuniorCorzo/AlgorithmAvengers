@@ -7,6 +7,7 @@ export default function Sectors({sections}) {
         <>
             <section className="Sectors">
                 <div className="container d-flex gap-5 mt-0 flex-column">
+                    <h2 className="text-center">Sectores Cubiertos</h2>
                     {sections.map((section, index) => (
                         <div key={index} id={section.title} className="row sector-card">
                             <div className="col-sm-6 px-0">
