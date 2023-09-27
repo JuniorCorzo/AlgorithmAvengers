@@ -1,8 +1,8 @@
 import '../../styled-components/auth.scss'
-import loginImage from '../../assets/img/login.jpeg'
+import registerImage from '../../assets/img/register.jpeg'
 import { Link } from 'react-router-dom';
 
-export default function Login() {
+export default function Register() {
     return (
         <>
             <section className="vh-100 Img-side">
@@ -12,7 +12,7 @@ export default function Login() {
                         <div className="card" style={{borderRadius: '1rem'}}>
                         <div className="row g-0">
                             <div className="col-md-6 col-lg-5 d-none d-md-block">
-                            <img src={loginImage}
+                            <img src={registerImage}
                                 alt="login form" className="img-fluid" style={{borderRadius: '1rem 0 0 1rem', height:'100%'}} />
                             </div>
                             <div className="col-md-6 col-lg-7 d-flex align-items-center">
@@ -25,7 +25,7 @@ export default function Login() {
                                     <span className="h1 fw-bold mb-0">LOGO</span>
                                 </div>
 
-                                <h5 className="fw-normal mb-3 pb-3">¡Que gusto verte de nuevo!</h5>
+                                <h5 className="fw-normal mb-3 pb-3">¡Disfruta de tu experiencia con nosotros!</h5>
 
                                 <div className="form-outline mb-4">
                                     <input type="email" id="form2Example17" className="form-control form-control-lg" />
@@ -38,19 +38,11 @@ export default function Login() {
                                 </div>
 
                                 <div className="pt-1 mb-4">
-                                    <Link to='/' className='nav-item'>
-                                        <button className="btn btn-dark btn-lg btn-block" type="button">Iniciar</button>
+                                    <Link to='/login' className='nav-item'>
+                                        <button className="btn btn-dark btn-lg btn-block" type="button">Registrarse</button>
                                     </Link>
                                 </div>
 
-                                <a className="small text-muted" href="#!">¿Olvidó su Contraseña?</a>
-                                <p className="mb-5 pb-lg-2" style={{color: '#393f81'}}>
-                                    ¿No tienes Cuenta con Nosotros?  
-                                    <Link to='/register' className='nav-item'>
-                                        <a href="#!"style={{color: '#393f81'}}>Registrate Aquí</a>
-                                    </Link>
-                                </p>
-                                
                                 <a href="#!" className="small text-muted">Términos de Uso. </a>
                                 <a href="#!" className="small text-muted">Política de Privacidad</a>
                                 </form>

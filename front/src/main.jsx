@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/home/Home";
 import Error from './routes/Error';
 import Login from './pages/login/Login';
+import Register from './pages/register/Register';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>,
+    error: <Error />,
+  },
+  {
+    path: "/register",
+    element: <Register/>,
     error: <Error />,
   }
 ]);
