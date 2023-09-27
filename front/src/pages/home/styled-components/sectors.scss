@@ -1,0 +1,41 @@
+
+// Estilos para el div padre de cada link
+.Sectors {
+    position: fixed;
+    z-index: 10;
+    background-color: #2a3a4381;
+    width: 180px;
+    top: 80px; 
+    padding: 10px 0px 25px 5px;
+    border-radius: 0px 60px 60px 0px;
+
+    h4 {
+        color: aliceblue;
+    }
+
+    // Estilos para el div que contiene los links a secciones
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10px;
+        margin-right: 15px;
+    }
+
+    // Estilos para los links 
+    .links button{
+        background-color: transparent;
+        border: none;
+        color: aliceblue;
+        text-decoration: none;
+        text-align: left;
+        padding: 2px;
+        border-radius: 20px 80px 80px 20px;
+    }
+
+    // Estilos cuando el cursor está sobre un link
+    .links button:hover{
+        background-color: #85a9bb;
+        transition: background-color 0.5s, color 0.5s;
+    }
+};

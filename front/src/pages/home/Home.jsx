@@ -1,11 +1,28 @@
 import Navbar from "../../components/Navbar";
 import './styled-components/home.scss'
 import homeImg from '../../assets/img/home.jpeg'
+import Sectors from "./components/Sectors";
 
 export default function Home() {
+    const data = [
+        {
+            title: 'Ciencia',
+        },
+        {
+            title: 'Tecnología',
+        },
+        {
+            title: 'Ingeniería',
+        },
+        {
+            title: 'Matemáticas',
+        },
+    ];
+
     return (
         <>
             <Navbar />
+            <Sectors name={'Sectores'} sections={data} />
 
             <section className="Home">
                 <h1>GoSTEM</h1>
@@ -22,6 +39,7 @@ export default function Home() {
                 </div>
             </section>
 
+            
         </>
     );
 }

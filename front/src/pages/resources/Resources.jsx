@@ -3,8 +3,20 @@ import CardResources from './components/CardResources';
 import './styled-components/resources.scss'
 
 export default function Resources() {
-    const resourcesData = [1,2,3,4];
-
+    const data = [
+        {
+            title: 'Ciencia',
+        },
+        {
+            title: 'Tecnología',
+        },
+        {
+            title: 'Ingeniería',
+        },
+        {
+            title: 'Matemáticas',
+        },
+    ];
     return (
         <>
             <Navbar />
@@ -13,7 +25,7 @@ export default function Resources() {
                 <div className="container">
                     <h2>Recursos de Apoyo</h2>
                     <div className="row cards">
-                        {resourcesData.map((resource) => (
+                        {data.map((resource) => (
                             <div key={resource} className="col">
                                 <CardResources />
                             </div>
