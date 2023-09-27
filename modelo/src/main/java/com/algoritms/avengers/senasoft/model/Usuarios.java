@@ -31,6 +31,13 @@ public class Usuarios{
         this.correo = correo;
         this.clave = clave;
     }
+    public Usuarios(int idSector, String nombre, String apellido, String correo, String clave) {
+        this.idSector = idSector;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.clave = clave;
+    }
 
     public int getId() {
         return id;

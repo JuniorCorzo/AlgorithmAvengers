@@ -30,40 +30,40 @@ public class DBServiceManejoDatosImpl implements DBService {
 
 
     //Guardar la infomacion dentro de la base de datos
-    public void guardarUsuario(Usuarios usuario){
+    public void guardar(Usuarios usuario){
         usuarioRepository.save(usuario);
     }
 
-    public void guardarSector(Sectores sector){
+    public void guardar(Sectores sector){
         sectorRepository.save(sector);
     }
 
-    public void guardarRecursos(Recursos recurso){
+    public void guardar(Recursos recurso){
         recursosRepository.save(recurso);
     }
 
-    public void guardarMotivo(MotivosDesercion motivo){
+    public void guardar(MotivosDesercion motivo){
         motivosRepository.save(motivo);
     }
 
     //Actualizar la informacion dentro de la base de datos
     //uso chat gpt
-    public void actualizarUsuario(int id, Usuarios usuario){
+    public void actualizar(int id, Usuarios usuario){
         usuarioRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el usuario"));
         usuarioRepository.save(usuario);
     }
 
-    public void actualizarSector(int id, Sectores sector){
+    public void actualizar(int id, Sectores sector){
         sectorRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el sector"));
         sectorRepository.save(sector);
     }
 
-    public void actualizarRecurso(int id, Recursos recursos){
+    public void actualizar(int id, Recursos recursos){
         recursosRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el recurso"));
         recursosRepository.save(recursos);
     }
 
-    public void actualizarRecurso(int id, MotivosDesercion motivos){
+    public void actualizar(int id, MotivosDesercion motivos){
         motivosRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el motivo de la dercesion"));
         motivosRepository.save(motivos);
     }
