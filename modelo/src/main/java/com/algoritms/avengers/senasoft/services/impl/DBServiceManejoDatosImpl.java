@@ -2,28 +2,26 @@ package com.algoritms.avengers.senasoft.services.impl;
 
 import com.algoritms.avengers.senasoft.model.MotivosDesercion;
 import com.algoritms.avengers.senasoft.model.Recursos;
-import com.algoritms.avengers.senasoft.model.Sector;
+import com.algoritms.avengers.senasoft.model.Sectores;
 import com.algoritms.avengers.senasoft.model.Usuarios;
 import com.algoritms.avengers.senasoft.repository.MotivosRepository;
 import com.algoritms.avengers.senasoft.repository.RecursosRepository;
-import com.algoritms.avengers.senasoft.repository.SectorRepository;
+import com.algoritms.avengers.senasoft.repository.SectoresRepository;
 import com.algoritms.avengers.senasoft.repository.UsuarioRepository;
 import com.algoritms.avengers.senasoft.services.DBService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.NoSuchElementException;
 
-@Service("manejoDatos")
+@Service
 public class DBServiceManejoDatosImpl implements DBService {
     final UsuarioRepository usuarioRepository;
-    final SectorRepository sectorRepository;
+    final SectoresRepository sectorRepository;
     final RecursosRepository recursosRepository;
     final MotivosRepository motivosRepository;
 
 
-    public DBServiceManejoDatosImpl(UsuarioRepository usuarioRepository, SectorRepository sectorRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
+    public DBServiceManejoDatosImpl(UsuarioRepository usuarioRepository, SectoresRepository sectorRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
         this.usuarioRepository = usuarioRepository;
         this.sectorRepository = sectorRepository;
         this.recursosRepository = recursosRepository;
@@ -36,7 +34,7 @@ public class DBServiceManejoDatosImpl implements DBService {
         usuarioRepository.save(usuario);
     }
 
-    public void guardarSector(Sector sector){
+    public void guardarSector(Sectores sector){
         sectorRepository.save(sector);
     }
 
@@ -55,7 +53,7 @@ public class DBServiceManejoDatosImpl implements DBService {
         usuarioRepository.save(usuario);
     }
 
-    public void actualizarSector(int id, Sector sector){
+    public void actualizarSector(int id, Sectores sector){
         sectorRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el sector"));
         sectorRepository.save(sector);
     }

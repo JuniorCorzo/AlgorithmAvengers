@@ -2,28 +2,27 @@ package com.algoritms.avengers.senasoft.services.impl;
 
 import com.algoritms.avengers.senasoft.model.MotivosDesercion;
 import com.algoritms.avengers.senasoft.model.Recursos;
-import com.algoritms.avengers.senasoft.model.Sector;
+import com.algoritms.avengers.senasoft.model.Sectores;
 import com.algoritms.avengers.senasoft.model.Usuarios;
 import com.algoritms.avengers.senasoft.repository.MotivosRepository;
 import com.algoritms.avengers.senasoft.repository.RecursosRepository;
-import com.algoritms.avengers.senasoft.repository.SectorRepository;
+import com.algoritms.avengers.senasoft.repository.SectoresRepository;
 import com.algoritms.avengers.senasoft.repository.UsuarioRepository;
 import com.algoritms.avengers.senasoft.services.DBService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service("encontrarDatos")
+@Service
 public class DBServiceEncontrarImpl implements DBService {
 
     final UsuarioRepository usuarioRepository;
-    final SectorRepository sectorRepository;
+    final SectoresRepository sectorRepository;
     final RecursosRepository recursosRepository;
     final MotivosRepository motivosRepository;
 
-    public DBServiceEncontrarImpl(SectorRepository sectorRepository, UsuarioRepository usuarioRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
+    public DBServiceEncontrarImpl(SectoresRepository sectorRepository, UsuarioRepository usuarioRepository, RecursosRepository recursosRepository, MotivosRepository motivosRepository) {
         this.sectorRepository = sectorRepository;
         this.usuarioRepository = usuarioRepository;
         this.recursosRepository = recursosRepository;
@@ -38,7 +37,7 @@ public class DBServiceEncontrarImpl implements DBService {
     }
 
 
-    public List<Sector> encontrarTodoSector() {
+    public List<Sectores> encontrarTodoSector() {
         return sectorRepository.findAll();
     }
 
@@ -58,7 +57,7 @@ public class DBServiceEncontrarImpl implements DBService {
     }
 
 
-    public Optional<Sector> encontrarPorIdSector(int id) {
+    public Optional<Sectores> encontrarPorIdSector(int id) {
         return sectorRepository.findById(id);
     }
 
