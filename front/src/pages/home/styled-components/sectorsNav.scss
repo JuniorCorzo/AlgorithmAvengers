@@ -1,9 +1,9 @@
 
 // Estilos para el div padre de cada link
-.Sectors {
+.SectorsNav {
     position: fixed;
     z-index: 10;
-    background-color: #2a3a4381;
+    background-color: #363b3dcc;
     width: 180px;
     top: 80px; 
     padding: 10px 0px 25px 5px;
@@ -35,7 +35,7 @@
 
     // Estilos cuando el cursor está sobre un link
     .links button:hover{
-        background-color: #85a9bb;
+        background-color: #607885;
         transition: background-color 0.5s, color 0.5s;
     }
 };

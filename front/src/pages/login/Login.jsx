@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Login() {
     return (
         <>
+            {/* Uso IA para adaptar la plantilla de Login en codigo JSX */}
             <section className="vh-100 Img-side">
                 <div className="container py-5 h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
