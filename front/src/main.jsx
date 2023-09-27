@@ -6,6 +6,7 @@ import Home from "./pages/home/Home";
 import Error from './routes/Error';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
+import Resources from './pages/resources/Resources';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,12 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register/>,
     error: <Error />,
-  }
+  },
+  {
+    path: "/resources",
+    element: <Resources/>,
+    error: <Error />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

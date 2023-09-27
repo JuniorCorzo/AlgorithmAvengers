@@ -5,9 +5,11 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-md navbar-dark fixed-top Navbar">
             <div className="container-md">
-                <a className="navbar-brand" href="#">
-                    LOGO
-                </a>
+                <Link to='/' className="nav-item">
+                    <a className="navbar-brand" href="#">
+                        LOGO
+                    </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,10 +18,10 @@ export default function Navbar() {
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
-                        <Link to='/categorias' className="nav-item">
+                        <Link to='/categories' className="nav-item">
                             <a className="nav-link">Categorias</a>
                         </Link>
-                        <Link to='/recursos' className="nav-item">
+                        <Link to='/resources' className="nav-item">
                             <a className="nav-link">Recursos</a>
                         </Link>
                     </ul>
