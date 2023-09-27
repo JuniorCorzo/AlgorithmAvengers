@@ -25,8 +25,8 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="d-flex">
-                    <Link to='/login' className='nav-item'>
-                        <a className="nav-link">Iniciar Sesion</a>
+                    <Link to='/login' className="nav-item">
+                        <a className="nav-link">Iniciar Sesión</a>
                     </Link>
                 </div>
             </div>
