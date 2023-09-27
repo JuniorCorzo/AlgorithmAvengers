@@ -49,6 +49,7 @@ public class DBServiceManejoDatosImpl implements DBService {
     }
 
     //Actualizar la informacion dentro de la base de datos
+    //uso chat gpt
     public void actualizarUsuario(int id, Usuarios usuario){
         usuarioRepository.findById(id).orElseThrow(() -> new NoSuchElementException("No se encontro el usuario"));
         usuarioRepository.save(usuario);
@@ -69,4 +70,20 @@ public class DBServiceManejoDatosImpl implements DBService {
         motivosRepository.save(motivos);
     }
 
+    //Borrar informacion de la base de datos
+    public void borrarUsuario(int id){
+        usuarioRepository.deleteById(id);
+    }
+
+    public void borrarSector(int id){
+        sectorRepository.deleteById(id);
+    }
+
+    public void borrarRecurso(int id){
+        recursosRepository.deleteById(id);
+    }
+
+    public void borrarMotivo(int id){
+        motivosRepository.deleteById(id);
+    }
 }
