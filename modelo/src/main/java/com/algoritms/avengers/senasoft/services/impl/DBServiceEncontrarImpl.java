@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class DBServiceImpl implements DBService {
+public class DBServiceEncontrarImpl implements DBService {
 
     @Autowired
     UsuarioRepository usuarioRepository;
