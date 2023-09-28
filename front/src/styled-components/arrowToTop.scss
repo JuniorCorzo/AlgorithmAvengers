@@ -1,0 +1,25 @@
+/* Estilos para el div que encierra la flecha */
+.Arrow {
+    position: fixed;
+    z-index: 10;
+    width: 80px;
+    bottom: 20px; 
+    right: 50px;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        background-color: rgb(15, 15, 15);
+        color: white;
+    }
+
+    // Estilos para el icono, tamaño
+    .arrow-icon {
+        font-size: 40px; 
+    }
+}

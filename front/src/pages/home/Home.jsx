@@ -10,6 +10,7 @@ import tecnologiaImg from '../../assets/img/tecnologia.jpeg'
 import ingenieriaImg from '../../assets/img/ingenieria.jpeg'
 import matematicasImg from '../../assets/img/matematicas.jpeg'
 import useScrollToTop from '../../hooks/useScrollToTop';
+import ArrowToTop from '../../components/ArrowToTop';
 
 export default function Home() {
     useScrollToTop();
@@ -65,6 +66,7 @@ export default function Home() {
                 </div>
             </section>
 
+            <ArrowToTop />
             <Sectors sections={data}/>
         </>
     );
