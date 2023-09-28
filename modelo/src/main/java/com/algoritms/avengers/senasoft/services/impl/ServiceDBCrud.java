@@ -65,6 +65,9 @@ public class ServiceDBCrud implements DBService {
     public Optional<Recursos> encontrarPorIdRecursos(int id) {
         return recursosRepository.findById(id);
     }
+    public List<Recursos> obtenerRecursosIdSector(int id){
+        return recursosRepository.findAllByIdSector(id);
+    }
 
     public Optional<MotivosDesercion> encontrarPorIdMotivos(int id) {
         return motivosRepository.findById(id);
