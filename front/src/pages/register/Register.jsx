@@ -1,8 +1,11 @@
 import '../../styled-components/auth.scss'
 import registerImage from '../../assets/img/register.jpeg'
 import { Link } from 'react-router-dom';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 export default function Register() {
+    useScrollToTop();
+    
     return (
         <>
             <section className="vh-100 Img-side">

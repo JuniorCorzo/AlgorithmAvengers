@@ -1,8 +1,11 @@
 import '../../styled-components/auth.scss'
 import loginImage from '../../assets/img/login.jpeg'
 import { Link } from 'react-router-dom';
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 export default function Login() {
+    useScrollToTop();
+    
     return (
         <>
             {/* Uso IA para adaptar la plantilla de Login en codigo JSX */}

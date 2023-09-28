@@ -9,8 +9,11 @@ import cienciaImg from '../../assets/img/ciencia.jpeg'
 import tecnologiaImg from '../../assets/img/tecnologia.jpeg'
 import ingenieriaImg from '../../assets/img/ingenieria.jpeg'
 import matematicasImg from '../../assets/img/matematicas.jpeg'
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 export default function Home() {
+    useScrollToTop();
+
     const data = [
         {
             title: 'Ciencia',
