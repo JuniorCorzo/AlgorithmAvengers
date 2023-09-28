@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 public class Usuarios{
     @Id
     @Column(name = "id_usuario")
-    private int id;
+    private int idUsuario;
     @Column(name = "id_sector")
     private int idSector;
     @Column(name = "nombre")
@@ -23,8 +23,8 @@ public class Usuarios{
     public Usuarios() {
     }
 
-    public Usuarios(int id, int idSector, String nombre, String apellido, String correo, String clave) {
-        this.id = id;
+    public Usuarios(int idUsuario, int idSector, String nombre, String apellido, String correo, String clave) {
+        this.idUsuario = idUsuario;
         this.idSector = idSector;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -39,12 +39,12 @@ public class Usuarios{
         this.clave = clave;
     }
 
-    public int getId() {
-        return id;
+    public int getIdUsuario() {
+        return idUsuario;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdUsuario(int id) {
+        this.idUsuario = id;
     }
 
     public int getIdSector() {
