@@ -125,4 +125,12 @@ public class ServiceDBCrud implements DBService {
     public void borrarMotivo(int id){
         motivosRepository.deleteById(id);
     }
+
+    public boolean existsRecursoById(int idRecurso) {
+        return recursosRepository.existsById(idRecurso);
+    }
+
+    public boolean existsUsuarioById(int idUsuario) {
+        return usuarioRepository.existsById(idUsuario);
+    }
 }
