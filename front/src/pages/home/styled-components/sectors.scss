@@ -17,11 +17,15 @@
         border-radius: 25px;
     
         .sector-card-img {
-            border-radius: 25px 0px 0px 25px;
-            object-fit: 'cover';
-            object-position: 'left';
-            width: 100%;
             height: 500px;
+            background-image: url('img/rsz_1clem-onojeghuo-zlabb6gke24-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-position-y: 20%;
+            border-radius: 25px 0px 0px 25px;
+            object-fit: cover;
+            object-position: left;
+            width: 100%;
         }
 
         .sector-card-button {
@@ -35,6 +39,10 @@
             border: 1px solid;
             outline-color: #0DCAF0;
             transition: background-color 0.5s, color 0.5s;
+        }
+
+        .sector-card-description {
+            text-align: start;
         }
     }
 }

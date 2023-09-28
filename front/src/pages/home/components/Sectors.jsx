@@ -17,9 +17,9 @@ export default function Sectors({sections}) {
                                     className="sector-card-img"
                                     />
                             </div>
-                            <div className="col-sm-7 d-flex flex-column text-center justify-content-evenly">
+                            <div className="col-sm-7 d-flex ps-5 flex-column text-center justify-content-evenly">
                                 <h3>{section.title}</h3>
-                                <p>{section.description}</p>
+                                <p className="sector-card-description">{section.description}</p>
                                 <div className="d-flex flex-row align-items-center justify-content-around">
                                     <ul className="d-flex flex-column gap-3">
                                         {section.areas.map((area, index) => (

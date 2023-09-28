@@ -48,7 +48,7 @@ export default function Filter() {
 
                             <div className="d-flex justify-content-center">
                                 <Link to='/resources' className='nav-item'>
-                                    <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Buscar Solución</button>
+                                    <button className="btn btn-primary btn-lg" id="submitButton" type="submit">Buscar Solución</button>
                                 </Link>
                             </div>
                         </form>

@@ -26,7 +26,7 @@ export default function Resources() {
                     <h2>Recursos de Apoyo</h2>
                     <div className="row cards">
                         {data.map((resource) => (
-                            <div key={resource} className="col">
+                            <div key={resource} className="col-3 d-flex flex-wrap">
                                 <CardResources />
                             </div>
                         ))}

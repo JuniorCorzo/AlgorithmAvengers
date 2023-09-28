@@ -14,25 +14,25 @@ export default function Home() {
     const data = [
         {
             title: 'Ciencia',
-            description: 'lorem',
+            description: 'Explora el apasionante mundo de la ciencia, donde la curiosidad y la investigación son clave. Descubre los avances científicos que están transformando nuestro conocimiento del mundo que nos rodea.',
             img: cienciaImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
         {
             title: 'Tecnología',
-            description: 'lorem',
+            description: 'Sumérgete en el mundo de la tecnología, donde la innovación y la creatividad convergen para dar forma al futuro. Explora las últimas tendencias tecnológicas y sus aplicaciones prácticas.',
             img: tecnologiaImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
         {
             title: 'Ingeniería',
-            description: 'lorem',
+            description: 'Descubre el emocionante campo de la ingeniería, donde la resolución de problemas y el diseño son fundamentales. Explora cómo los ingenieros crean soluciones para desafíos globales.',
             img: ingenieriaImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
         {
             title: 'Matemáticas',
-            description: 'lorem',
+            description: 'Adéntrate en el mundo de las matemáticas, el lenguaje universal de la ciencia. Descubre cómo las matemáticas están en el corazón de todos los aspectos de la vida y la investigación.',
             img: matematicasImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
@@ -52,7 +52,9 @@ export default function Home() {
                         </div>
                         <div className="col-md-6 col-sm-12 col-info">
                             <h3 className="mt-5">Ciencia, Tecnología, Ingeniería, y Matemáticas</h3>
-                            <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit officiis, sit harum reiciendis dolorum sed non accusamus recusandae facere voluptates quae nulla! Autem explicabo quisquam a cupiditate quo sed accusamus.</p>
+                            <p className="mt-5">
+
+                            </p>
                         </div>
                     </div>
                 </div>
