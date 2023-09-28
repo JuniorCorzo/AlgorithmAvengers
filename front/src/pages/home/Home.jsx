@@ -12,33 +12,50 @@ import matematicasImg from '../../assets/img/matematicas.jpeg'
 import useScrollToTop from '../../hooks/useScrollToTop';
 import ArrowToTop from '../../components/ArrowToTop';
 
+// import { RestTemplate } from 'spring-web-client';
+
 export default function Home() {
     useScrollToTop();
+
+    // // Create a RestTemplate instance
+    // const restTemplate = new RestTemplate();
+
+    // // Configure the GET request to the /sectors endpoint
+    // const url = "http://localhost:8080/sectors?q={q}";
+
+    // // Make the request and get the response
+    // const response = restTemplate.getForEntity(url, List.class);
+
+    // // Get the list of sectors from the response
+    // const sectors = response.getBody();
+
+    // // Get the search query from the URL
+    // const q = new URLSearchParams(window.location.search).get('q');
 
     const data = [
         {
             title: 'Ciencia',
             description: 'Explora el apasionante mundo de la ciencia, donde la curiosidad y la investigación son clave. Descubre los avances científicos que están transformando nuestro conocimiento del mundo que nos rodea.',
             img: cienciaImg,
-            areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
+            areas: ['Física', 'Química', 'Astronomía', 'Geología']
         },
         {
             title: 'Tecnología',
             description: 'Sumérgete en el mundo de la tecnología, donde la innovación y la creatividad convergen para dar forma al futuro. Explora las últimas tendencias tecnológicas y sus aplicaciones prácticas.',
             img: tecnologiaImg,
-            areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
+            areas: ['Informática', 'Telecomunicaciones', 'Desarrollo de Software', 'Ciberseguridad']
         },
         {
             title: 'Ingeniería',
             description: 'Descubre el emocionante campo de la ingeniería, donde la resolución de problemas y el diseño son fundamentales. Explora cómo los ingenieros crean soluciones para desafíos globales.',
             img: ingenieriaImg,
-            areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
+            areas: ['Mecánica', 'Civil', 'Industrial', 'Electrónica']
         },
         {
             title: 'Matemáticas',
             description: 'Adéntrate en el mundo de las matemáticas, el lenguaje universal de la ciencia. Descubre cómo las matemáticas están en el corazón de todos los aspectos de la vida y la investigación.',
             img: matematicasImg,
-            areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
+            areas: ['Álgebra', 'Geomtería', 'Cálculo', 'Aritmética']
         },
     ];
 
