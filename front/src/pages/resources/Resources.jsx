@@ -7,38 +7,41 @@ import cursosImg from '../../assets/img/resource-cursos.jpeg'
 import docsImg from '../../assets/img/resource-docs.jpeg'
 import contactosImg from '../../assets/img/resource-contactos.jpeg'
 import equipoImg from '../../assets/img/resource-equipo.jpeg'
+import useScrollToTop from '../../hooks/useScrollToTop';
 
 export default function Resources() {
+    useScrollToTop();
+
     const data = [
         {
             title: 'Vídeos',
-            description: 'lorem',
+            description: 'Aprende sobre ciencia, tecnología, ingeniería y matemáticas con nuestros vídeos educativos. Desde vídeos introductorios hasta vídeos avanzados, tenemos algo para todos.',
             img: videoImg,
-            link: '', 
+            link: 'https://www.youtube.com', 
         },
         {
             title: 'Cursos',
-            description: 'lorem',
+            description: 'Desarrolla tus habilidades y conocimientos en ciencia, tecnología, ingeniería y matemáticas con nuestros cursos online. Tenemos una amplia selección de cursos gratuitos y de pago para todos los niveles.',
             img: cursosImg,
-            link: '',
+            link: 'https://platzi.com/cursos/',
         },
         {
             title: 'Documentación',
-            description: 'lorem',
+            description: 'Encuentra documentación técnica y tutoriales sobre ciencia, tecnología, ingeniería y matemáticas. Nuestra colección incluye documentación para lenguajes de programación, frameworks, bibliotecas y más.',
             img: docsImg,
-            link: '',
+            link: 'https://www.w3schools.com/',
         },
         {
-            title: 'Apoyo Psicológico y Contacto',
-            description: 'lorem',
+            title: 'Canales de Apoyo',
+            description: 'Obtén apoyo psicológico de organizaciones que entienden los desafíos únicos de los estudiantes y profesionales de ciencia, tecnología, ingeniería y matemáticas.',
             img: contactosImg,
-            link: '',
+            link: 'https://www.stemeducol.com/',
         },
         {
             title: 'Equipo Personalizado de Notion',
-            description: 'lorem',
+            description: 'Organiza tu aprendizaje y trabajo con nuestra plantilla de Notion personalizada para estudiantes y profesionales de ciencia, tecnología, ingeniería y matemáticas.',
             img: equipoImg,
-            link: '',
+            link: 'https://common-politician-4da.notion.site/Sena-Soft-2023-Algorithms-Avengers-e0e627991ab14102abd3382f1582e342?pvs=4',
         },
     ];
 

@@ -37,25 +37,29 @@ export default function Home() {
             title: 'Ciencia',
             description: 'Explora el apasionante mundo de la ciencia, donde la curiosidad y la investigación son clave. Descubre los avances científicos que están transformando nuestro conocimiento del mundo que nos rodea.',
             img: cienciaImg,
-            areas: ['Física', 'Química', 'Astronomía', 'Geología']
+            areas: ['Física', 'Química', 'Astronomía', 'Geología'],
+            link: '/resources',
         },
         {
             title: 'Tecnología',
             description: 'Sumérgete en el mundo de la tecnología, donde la innovación y la creatividad convergen para dar forma al futuro. Explora las últimas tendencias tecnológicas y sus aplicaciones prácticas.',
             img: tecnologiaImg,
-            areas: ['Informática', 'Telecomunicaciones', 'Desarrollo de Software', 'Ciberseguridad']
+            areas: ['Informática', 'Telecomunicaciones', 'Desarrollo de Software', 'Ciberseguridad'],
+            link: '/resources',
         },
         {
             title: 'Ingeniería',
             description: 'Descubre el emocionante campo de la ingeniería, donde la resolución de problemas y el diseño son fundamentales. Explora cómo los ingenieros crean soluciones para desafíos globales.',
             img: ingenieriaImg,
-            areas: ['Mecánica', 'Civil', 'Industrial', 'Electrónica']
+            areas: ['Mecánica', 'Civil', 'Industrial', 'Electrónica'],
+            link: '/resources',
         },
         {
             title: 'Matemáticas',
             description: 'Adéntrate en el mundo de las matemáticas, el lenguaje universal de la ciencia. Descubre cómo las matemáticas están en el corazón de todos los aspectos de la vida y la investigación.',
             img: matematicasImg,
-            areas: ['Álgebra', 'Geomtería', 'Cálculo', 'Aritmética']
+            areas: ['Álgebra', 'Geomtería', 'Cálculo', 'Aritmética'],
+            link: '/resources',
         },
     ];
 

@@ -13,7 +13,7 @@ export default function CardResources({cards}) {
                             <div className="card__content">
                                 <p className="card__title">{resource.title}</p>
                                 <p className="card__description">{resource.description}</p>
-                                <a className='card__link nav-link' href={resource.link}>Ir</a>
+                                <a className='card__link nav-link' href={resource.link} target='_blank' rel='noreferrer'>Ir</a>
                             </div>
                         </div>
                     </div>        
