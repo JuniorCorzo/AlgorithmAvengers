@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import './styled-components/filter.scss'
+import Navbar from '../../components/Navbar'
 
 export default function Filter() {
     return (
         <>
+            <Navbar />
+
             <section className="Formulario">
                 <div className="container px-5 my-5">
                 <div className="row justify-content-center">
@@ -30,7 +33,7 @@ export default function Filter() {
 
                             <div className="form-floating mb-3">
                                 <textarea className="form-control" id="message" type="text" placeholder="Por qué" style={{height: '10rem'}}></textarea>
-                                <label htmlFor="message">Justificación, ¿Por qué planeas desertar?</label>
+                                <label htmlFor="message">¿Por qué planeas desertar?</label>
                                 <div className="invalid-feedback" data-sb-feedback="message:required"> is required.</div>
                             </div>
 

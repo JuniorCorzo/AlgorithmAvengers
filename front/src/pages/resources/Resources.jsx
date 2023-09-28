@@ -24,9 +24,9 @@ export default function Resources() {
             <section className='Resources'>
                 <div className="container">
                     <h2>Recursos de Apoyo</h2>
-                    <div className="row cards">
+                    <div className="row cards d-flex gap-5 justify-content-center">
                         {data.map((resource) => (
-                            <div key={resource} className="col-3 d-flex flex-wrap">
+                            <div key={resource} className="col-md-3 col-sm-4 d-flex flex-wrap">
                                 <CardResources />
                             </div>
                         ))}

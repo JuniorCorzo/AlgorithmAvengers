@@ -59,4 +59,10 @@
     font-size: 14px;
     color: #777;
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
 }
