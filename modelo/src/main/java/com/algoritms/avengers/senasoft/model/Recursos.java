@@ -8,9 +8,9 @@ import jakarta.persistence.Id;
 public class Recursos {
     @Id
     @Column(name = "id_recurso")
-    private int id;
-    @Column(name = "id_sector")
     private int idRecurso;
+    @Column(name = "id_sector")
+    private int idSector;
     @Column(name = "titulo")
     private String titulo;
     @Column(name = "tipo")
@@ -18,24 +18,15 @@ public class Recursos {
     @Column(name = "enlace")
     private String enlace;
 
-    public Recursos(int id, int idRecurso, String titulo, String tipo, String enlace) {
-        this.id = id;
+    public Recursos() {
+    }
+
+    public Recursos(int idRecurso, int idSector, String titulo, String tipo, String enlace) {
         this.idRecurso = idRecurso;
+        this.idSector = idSector;
         this.titulo = titulo;
         this.tipo = tipo;
         this.enlace = enlace;
-    }
-
-    public Recursos() {
-
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getIdRecurso() {
@@ -44,6 +35,14 @@ public class Recursos {
 
     public void setIdRecurso(int idRecurso) {
         this.idRecurso = idRecurso;
+    }
+
+    public int getIdSector() {
+        return idRecurso;
+    }
+
+    public void setIdSector(int idSector) {
+        this.idSector = idSector;
     }
 
     public String getTitulo() {
