@@ -5,32 +5,35 @@ import SectorsNav from "./components/SectorsNav";
 import Sectors from "./components/Sectors";
 
 import homeImg from '../../assets/img/home.jpeg'
-import sectorImg from '../../assets/img/sector.jpeg'
+import cienciaImg from '../../assets/img/ciencia.jpeg'
+import tecnologiaImg from '../../assets/img/tecnologia.jpeg'
+import ingenieriaImg from '../../assets/img/ingenieria.jpeg'
+import matematicasImg from '../../assets/img/matematicas.jpeg'
 
 export default function Home() {
     const data = [
         {
             title: 'Ciencia',
             description: 'lorem',
-            img: sectorImg,
+            img: cienciaImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
         {
             title: 'Tecnología',
             description: 'lorem',
-            img: sectorImg,
+            img: tecnologiaImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
         {
             title: 'Ingeniería',
             description: 'lorem',
-            img: sectorImg,
+            img: ingenieriaImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
         {
             title: 'Matemáticas',
             description: 'lorem',
-            img: sectorImg,
+            img: matematicasImg,
             areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4']
         },
     ];

@@ -1,8 +1,12 @@
 .Sectors {
-    padding-top: 200px;
+    padding-top: 160px;
     padding-bottom: 200px;
     background-color: rgb(118, 143, 167);
     color: #ececec;
+
+    h2 {
+        font-size: 40px;
+    }
 
     .sector-card {
         background: linear-gradient(0deg, #323232, #808080),

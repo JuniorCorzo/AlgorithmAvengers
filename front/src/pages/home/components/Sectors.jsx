@@ -10,14 +10,14 @@ export default function Sectors({sections}) {
                     <h2 className="text-center">Sectores Cubiertos</h2>
                     {sections.map((section, index) => (
                         <div key={index} id={section.title} className="row sector-card">
-                            <div className="col-sm-6 px-0">
+                            <div className="col-sm-5 px-0">
                                 <img
                                     src={section.img}
                                     alt={section.title}
                                     className="sector-card-img"
                                     />
                             </div>
-                            <div className="col-sm-6 d-flex flex-column text-center justify-content-evenly">
+                            <div className="col-sm-7 d-flex flex-column text-center justify-content-evenly">
                                 <h3>{section.title}</h3>
                                 <p>{section.description}</p>
                                 <div className="d-flex flex-row align-items-center justify-content-around">

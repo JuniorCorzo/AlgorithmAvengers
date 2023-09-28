@@ -19,10 +19,10 @@ export default function Navbar() {
                             <a className="nav-link active" aria-current="page" href="#">Inicio</a>
                         </li>
                         <Link to='/filter' className="nav-item">
-                            <a className="nav-link">Motivos de Desercion</a>
+                            <a className="nav-link">Tú Motivo de Deserción</a>
                         </Link>
                         <Link to='/resources' className="nav-item">
-                            <a className="nav-link">Recursos</a>
+                            <a className="nav-link">Recursos de Aprendizaje</a>
                         </Link>
                     </ul>
                 </div>
