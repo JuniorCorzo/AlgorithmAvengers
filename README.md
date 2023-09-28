@@ -3,7 +3,7 @@
 
 ## Objetivo del Proyecto
 
-Identificar la deserción de estudiantes en carreras STEM con base en los altos índices de retiro de las diversas carreras que abarca esta área. 
+Desarrollar una página web interactiva y educativa que tenga como finalidad reducir significativamente la deserción de jóvenes en carreras STEM (Ciencia, Tecnología, Ingeniería y Matemáticas)
 
 ## Alcance del Proyecto
 
