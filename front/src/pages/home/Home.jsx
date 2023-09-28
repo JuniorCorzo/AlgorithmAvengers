@@ -53,7 +53,9 @@ export default function Home() {
                         <div className="col-md-6 col-sm-12 col-info">
                             <h3 className="mt-5">Ciencia, Tecnología, Ingeniería, y Matemáticas</h3>
                             <p className="mt-5">
-
+                                Bienvenido a GoSTEM, donde exploramos el apasionante mundo de la Ciencia, la Tecnología,
+                                la Ingeniería y las Matemáticas. Nuestro objetivo es inspirar la curiosidad y el
+                                descubrimiento en estos campos fundamentales que impulsan la innovación y dan forma al futuro.
                             </p>
                         </div>
                     </div>

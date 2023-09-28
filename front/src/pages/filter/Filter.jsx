@@ -30,7 +30,7 @@ export default function Filter() {
 
                             <div className="form-floating mb-3">
                                 <textarea className="form-control" id="message" type="text" placeholder="Por qué" style={{height: '10rem'}}></textarea>
-                                <label htmlFor="message">Justificación, ¿Por qué planea desertar?</label>
+                                <label htmlFor="message">Justificación, ¿Por qué planeas desertar?</label>
                                 <div className="invalid-feedback" data-sb-feedback="message:required"> is required.</div>
                             </div>
 

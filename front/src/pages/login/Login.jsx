@@ -22,8 +22,8 @@ export default function Login() {
                                 <form>
 
                                 <div className="d-flex align-items-center mb-3 pb-1">
-                                    <i className="fas fa-cubes fa-2x me-3" style={{color: '#ff6219'}}>SDA</i>
-                                    <span className="h1 fw-bold mb-0">LOGO</span>
+                                    <i className="fas fa-cubes fa-2x me-3" style={{color: '#ff6219'}}>AvengersAlgorithms</i>
+                                    <span className="h1 fw-bold mb-0">GoSTEM</span>
                                 </div>
 
                                 <h5 className="fw-normal mb-3 pb-3">¡Que gusto verte de nuevo!</h5>
