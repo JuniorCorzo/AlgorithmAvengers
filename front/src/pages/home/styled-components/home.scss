@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    font-family: 'Mooli', sans-serif;   
+}
+
+.Home {
+    background: linear-gradient(to right, #3a79cb, #80c4f2);
+    background-color: #007bff;
+    padding-top: 90px;
+    text-align: center;
+    padding-bottom: 120px;
+    
+    h1 {
+        font-family: 'Mooli', sans-serif;
+        font-size: 60px;
+        color: aliceblue;
+    }
+
+    h3 {
+        font-family: 'Mooli', sans-serif;
+    }
+
+    .row {
+        display: flex;
+        margin-top: 80px;
+
+        .col-img {
+            max-height: 400px;
+            width: 420px;
+            border-radius: 25px;
+            filter: drop-shadow(0px 0px 8px #001328)
+        }
+        .col-info {
+            color: aliceblue;
+        }
+    }
+}

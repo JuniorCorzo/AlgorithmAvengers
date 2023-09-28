@@ -1,0 +1,53 @@
+.Sectors {
+    background-color: rgb(118, 143, 167);
+    padding-top: 160px;
+    padding-bottom: 200px;
+    
+    h2 {
+        font-size: 40px;
+        color: #d1eef7;
+    }
+
+    .sector-card {
+        background: linear-gradient(to right, #6689a8, #b6e1f6);
+        background-color: #81e8ff;
+        color: #293642;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        margin-bottom: 200px;
+    
+        .sector-card-img {
+            height: 500px;
+            background-image: url('img/rsz_1clem-onojeghuo-zlabb6gke24-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-position-y: 20%;
+            border-radius: 25px 0px 0px 25px;
+            object-fit: cover;
+            object-position: left;
+            width: 100%;
+        }
+
+        .sector-card-button {
+            height: 60px;
+            background-color: #0DCAF0;
+            color: #d9edf7;
+        }
+
+        .sector-card-button:hover {
+            background-color: transparent;
+            color: #488f9d;
+            border: 1px solid;
+            // outline-color: #115360;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .sector-card-description {
+            text-align: start;
+        }
+    }
+}
+
+li {
+    text-align: start;
+}
