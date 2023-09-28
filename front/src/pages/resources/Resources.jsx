@@ -2,21 +2,35 @@ import Navbar from '../../components/Navbar'
 import CardResources from './components/CardResources';
 import './styled-components/resources.scss'
 
+import videoImg from '../../assets/img/resource-videos.jpeg'
+import cursosImg from '../../assets/img/resource-cursos.jpeg'
+import docsImg from '../../assets/img/resource-docs.jpeg'
+import contactosImg from '../../assets/img/resource-contactos.jpeg'
+
 export default function Resources() {
     const data = [
         {
-            title: 'Ciencia',
+            title: 'Vídeos',
+            img: videoImg,
+            link: '', 
         },
         {
-            title: 'Tecnología',
+            title: 'Cursos',
+            img: cursosImg,
+            link: '',
         },
         {
-            title: 'Ingeniería',
+            title: 'Documentación',
+            img: docsImg,
+            link: '',
         },
         {
-            title: 'Matemáticas',
+            title: 'Apoyo Psicológico y Contacto',
+            img: contactosImg,
+            link: '',
         },
     ];
+
     return (
         <>
             <Navbar />
@@ -24,13 +38,7 @@ export default function Resources() {
             <section className='Resources'>
                 <div className="container">
                     <h2>Recursos de Apoyo</h2>
-                    <div className="row cards d-flex gap-5 justify-content-center">
-                        {data.map((resource) => (
-                            <div key={resource} className="col-md-3 col-sm-4 d-flex flex-wrap">
-                                <CardResources />
-                            </div>
-                        ))}
-                    </div>
+                    <CardResources cards={data}/>
                 </div>
             </section>
         </>

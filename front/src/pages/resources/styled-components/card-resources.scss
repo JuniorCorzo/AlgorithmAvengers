@@ -1,3 +1,7 @@
+.cards{
+    margin-top: 80px;
+}
+
 .cardT {
     position: relative;
     width: 300px;
@@ -13,10 +17,10 @@
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.cardT svg {
-    width: 48px;
-    fill: #333;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.cardT img {
+    width: 400px;
+    min-height: 220px;
+    object-fit: cover;
 }
 
 .cardT:hover {
@@ -48,10 +52,6 @@
     font-size: 24px;
     color: #333;
     font-weight: 700;
-}
-
-.cardT:hover svg {
-    scale: 0;
 }
 
 .card__description {
